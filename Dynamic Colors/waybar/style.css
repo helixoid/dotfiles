@@ -1,4 +1,4 @@
-@import "wallust.css";
+@import "colors-dynamic.css";
 * {
   all: unset; /*this is really important to isolate waybar from gtk*/
   font-family: "Noto Sans, Symbols Nerd Font";
@@ -7,122 +7,123 @@
 }
 
 window#waybar {
-  border: 3px solid @color9;
+  border: 3px solid @primary;
   border-radius: 10px;
-  background: @background;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 tooltip {
-  background: @background;
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   border-width: 3px;
   border-style: solid;
-  border-color: @color9;
+  border-color: @primary;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #workspaces button {
-  color: @color5;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
   transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-  color: @color3;
+  color: @primary;
   transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.urgent {
-  color: #ff0000;
+  color: @error;
   transition: all 0.3s ease-in-out;
 }
 
 #clock.2 {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 13px;
 }
 
 #custom-separator {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #clock {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #mpd.2 {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #mpd.3 {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #mpd.4 {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #tray {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #custom-player {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #mpd {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #network {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #cpu {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #backlight {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
 #pulseaudio {
-  color: @foreground;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-#battery {
-  color: @foreground;
+  color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-right: 13px;
+}
+
+#battery {
+  color: @primary_fixed;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /*padding-right: 13px;*/
 }
 
 #battery.warning {

@@ -10,7 +10,7 @@
   // For Icons Alignments use "<span font_family='Material Icons' rise='-4000' size='large'>" before putting icons in format section.
   "modules-left": ["clock#2", "clock"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["tray", "network", "backlight", "pulseaudio", "battery"],
+  "modules-right": ["tray", "network", "backlight", "pulseaudio"],
 
   "hyprland/workspaces": {
     "disable-scroll": true,
@@ -126,14 +126,14 @@
 
   "pulseaudio": {
     "tooltip": false,
-    "on-click": "pavucontrol",
+    "on-click": "pwvucontrol",
     "scroll-step": 5,
     "format": "{icon} {volume}%",
     "format-muted": "󰝟",
-    "format-bluetooth": "󰥰",
+    "format-bluetooth": " {volume}%",
     "format-icons": {
-      "headphone": "󰋋",
-      "headset": "󰋎",
+      "headphone": "󰋋 ",
+      "headset": "󰋎 ",
       "default": ["󰕿", "󰖀", "󰕾"],
     },
   },

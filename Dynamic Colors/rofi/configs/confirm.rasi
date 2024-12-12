@@ -65,7 +65,7 @@ textbox {
     text-color:                  inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
-    placeholder-color:           @foreground;
+    placeholder-color:           @text;
     blink:                       true;
     markup:                      true;
 }
@@ -75,7 +75,7 @@ error-message {
     border-radius:               0px;
     border-color:                @selected;
     background-color:            @background;
-    text-color:                  @foreground;
+    text-color:                  @text;
 }
 
 /*****----- Listview -----*****/
@@ -98,7 +98,7 @@ listview {
     border-radius:               0px;
     border-color:                @selected;
     background-color:            transparent;
-    text-color:                  @foreground;
+    text-color:                  @text;
     cursor:                      "default";
 }
 
@@ -112,7 +112,7 @@ element {
     border-radius:               100%;
     border-color:                @selected;
     background-color:            @selected;
-    text-color:                  @foreground;
+    text-color:                  @text;
     cursor:                      pointer;
 }
 element-text {
@@ -125,5 +125,5 @@ element-text {
 }
 element selected.normal {
     background-color:            @background-alt;
-    text-color:                  @foreground;
+    text-color:                  @text;
 }

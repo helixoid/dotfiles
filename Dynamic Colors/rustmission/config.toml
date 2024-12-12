@@ -15,7 +15,7 @@ beginner_mode = true
 headers_hide = false
 
 [connection]
-url = "http://192.168.1.72:9091/transmission/rpc" # REQUIRED!
+url = "http://localhost:9091/transmission/rpc" # REQUIRED!
 
 # Refresh timings (in seconds)
 torrents_refresh = 5
