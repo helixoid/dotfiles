@@ -58,7 +58,7 @@ message {
     border-radius:               100%;
     border-color:                @selected;
     background-color:            @urgent;
-    text-color:                  @Prompt;
+    text-color:                  @prompt-text;
 }
 textbox {
     background-color:            inherit;
