@@ -12,10 +12,10 @@ return {
     config = function()
       require('mason').setup()
       require('mason-lspconfig').setup {
-        ensure_installed = { 'pyright', 'clangd', 'lua_ls' },
+        ensure_installed = { 'lua_ls', 'pyright', 'clangd' },
       }
       require('mason-tool-installer').setup {
-        ensure_installed = { 'stylua' },
+        ensure_installed = { 'stylua', 'taplo', 'prettierd', 'black', 'isort' },
       }
     end,
   },
