@@ -40,23 +40,20 @@ return {
         custom_highlights = {},
         default_integrations = true,
         integrations = {
-          cmp = true,
-          alpha = true,
+          blink_cmp = true,
+          snacks = true,
           gitsigns = true,
           noice = true,
           mason = true,
           dap = true,
           dap_ui = true,
-          neotree = true,
           treesitter = true,
           telescope = true,
           which_key = true,
-          notify = true,
           mini = {
             enabled = true,
             indentscope_color = '',
           },
-          -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
         },
       }
     end,
