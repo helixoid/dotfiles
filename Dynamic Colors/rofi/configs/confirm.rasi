@@ -31,9 +31,9 @@ window {
     padding:                     0px;
     border:                      3px solid;
     border-radius:               15px;
-    border-color:                @active;
+    border-color:                @window-border;
     cursor:                      "default";
-    background-color:            @background;
+    background-color:            @window-background;
 }
 
 /*****----- Main Box -----*****/

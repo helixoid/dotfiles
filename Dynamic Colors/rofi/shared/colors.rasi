@@ -1,27 +1,18 @@
 * {
-    background:     	#988d970D;
-    background-alt: 	#603767;
-    selected:       	#d7bfd6;
-    active:         	#f3dbf2;
-    urgent:         	#ffb4ab;
-    prompt-text:	#fed6ff;
-    text:		#3d373d;
-    border-main:	#e9b5ee;
-    
-    selected-text:	#e9b5ee;
-    selected-background: #603767;
+    selected-text:	#ffb3ae;
+    selected-background: #733331;
 
-    prompt-text: #d7bfd6;
-    prompt-background: #524153;
+    prompt-text: #e7bdb9;
+    prompt-background: #5d3f3d;
 
-    normal-text: #603767;
-    normal-background: #988d970d;
+    normal-text: #733331;
+    normal-background: #a08c8b0d;
 
-    window-border: #f5b8af;
-    window-background: #988d970D;
+    window-border: #e2c28c;
+    window-background: #a08c8b0D;
 
-    scrollbar-filled: #3b2b3c;
-    scrollbar-empty: #f3dbf2;
+    scrollbar-filled: #442928;
+    scrollbar-empty: #ffdad7;
 
     error-message: #ffb4ab;
     error-message-border: #690005;

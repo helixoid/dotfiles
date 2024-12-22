@@ -1,13 +1,4 @@
 * {
-    background:     	{{colors.outline.dark.hex}}0D;
-    background-alt: 	{{colors.primary_container.dark.hex}};
-    selected:       	{{colors.secondary.dark.hex}};
-    active:         	{{colors.on_secondary_container.dark.hex}};
-    urgent:         	{{colors.error.default.hex}};
-    prompt-text:	{{colors.primary_fixed.default.hex}};
-    text:		{{colors.surface_bright.default.hex}};
-    border-main:	{{colors.primary.default.hex}};
-    
     selected-text:	{{colors.primary.default.hex}};
     selected-background: {{colors.primary_container.default.hex}};
 

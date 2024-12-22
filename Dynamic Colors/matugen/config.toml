@@ -14,6 +14,10 @@ output_path = '~/.config/waybar/colors-dynamic.css'
 input_path = '~/.config/matugen/templates/rofi.rasi'
 output_path = '~/.config/rofi/shared/colors.rasi'
 
+[templates.nyaa]
+input_path = '~/.config/matugen/templates/nyaa-colors.toml'
+output_path = '~/.config/nyaa/themes/Material-You.toml'
+
 [templates.kitty]
 input_path = '~/.config/matugen/templates/kitty-colors.conf'
 output_path = '~/.config/kitty/colors-dynamic.conf'
