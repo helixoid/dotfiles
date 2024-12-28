@@ -15,7 +15,7 @@ return {
         ensure_installed = { 'lua_ls', 'pyright', 'clangd' },
       }
       require('mason-tool-installer').setup {
-        ensure_installed = { 'stylua', 'taplo', 'prettierd', 'black', 'isort' },
+        ensure_installed = { 'stylua', 'taplo', 'prettierd', 'ruff' },
       }
     end,
   },
