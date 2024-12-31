@@ -24,6 +24,7 @@ return {
       javascript = { 'prettierd', 'prettier', stop_after_first = true },
       yaml = { 'yamlfmt' },
       toml = { 'taplo' },
+      markdown = { 'prettierd', 'prettier', stop_after_first = true },
     },
     -- Set default options
     default_format_opts = {

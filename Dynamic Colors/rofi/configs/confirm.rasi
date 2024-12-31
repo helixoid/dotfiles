@@ -44,7 +44,7 @@ mainbox {
     padding:                     30px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
+    border-color:                @window-border;
     background-color:            transparent;
     children:                    [ "message", "listview" ];
 }
@@ -56,8 +56,8 @@ message {
     padding:                     12px;
     border:                      0px solid;
     border-radius:               100%;
-    border-color:                @selected;
-    background-color:            @urgent;
+    border-color:                @error-message-border;
+    background-color:            @window-background;
     text-color:                  @prompt-text;
 }
 textbox {
@@ -65,7 +65,7 @@ textbox {
     text-color:                  inherit;
     vertical-align:              0.5;
     horizontal-align:            0.5;
-    placeholder-color:           @text;
+    placeholder-color:           @normal-text;
     blink:                       true;
     markup:                      true;
 }
@@ -73,9 +73,9 @@ error-message {
     padding:                     12px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
-    background-color:            @background;
-    text-color:                  @text;
+    border-color:                @error-message-border;
+    background-color:            @window-background;
+    text-color:                  @error-message;
 }
 
 /*****----- Listview -----*****/
@@ -96,9 +96,9 @@ listview {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px;
-    border-color:                @selected;
+    border-color:                @window-border;
     background-color:            transparent;
-    text-color:                  @text;
+    text-color:                  @normal-text;
     cursor:                      "default";
 }
 
@@ -110,9 +110,9 @@ element {
     padding:                     22px 10px;
     border:                      0px solid;
     border-radius:               100%;
-    border-color:                @selected;
-    background-color:            @selected;
-    text-color:                  @text;
+    border-color:                @window-border;
+    background-color:            @normal-background;
+    text-color:                  @normal-text;
     cursor:                      pointer;
 }
 element-text {
@@ -124,6 +124,6 @@ element-text {
     horizontal-align:            0.5;
 }
 element selected.normal {
-    background-color:            @background-alt;
-    text-color:                  @text;
+    background-color:            @selected-background;
+    text-color:                  @selected-text;
 }
