@@ -116,14 +116,14 @@ tooltip {
   color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-right: 13px;
+  /*padding-right: 13px;*/
 }
 
 #battery {
   color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
-  /*padding-right: 13px;*/
+  padding-right: 13px;
 }
 
 #battery.warning {
