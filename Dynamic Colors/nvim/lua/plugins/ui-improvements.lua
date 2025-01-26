@@ -13,6 +13,7 @@ return {
       scroll = { enabled = true },
       statuscolumn = { enabled = true },
       words = { enabled = true },
+      toggle = { enabled = true },
       picker = { enable = true, ui_select = true },
     },
     -- stylua: ignore
@@ -89,5 +90,4 @@ return {
       }
     end,
   },
-  { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 }
