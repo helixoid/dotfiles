@@ -1,6 +1,6 @@
 # Colorsheme (Catppuccin Mocha)
 set default-fg				rgba(205,214,244,1)
-set default-bg				rgba(30,30,46,1)
+set default-bg				rgba(30,30,46,0.25)
 
 set completion-bg			rgba(49,50,68,1)
 set completion-fg			rgba(205,214,244,1)

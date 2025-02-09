@@ -22,6 +22,16 @@ tooltip {
   padding-bottom: 3px;
 }
 
+#clock.2
+#custom-separator
+#clock
+#tray
+#network
+#backlight
+#pulseaudio
+#battery
+#battery.warning
+#battery.critical
 #workspaces button {
   color: @primary_fixed;
   padding-top: 3px;
@@ -58,49 +68,13 @@ tooltip {
   padding-bottom: 3px;
 }
 
-#mpd.2 {
-  color: @primary_fixed;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-#mpd.3 {
-  color: @primary_fixed;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-#mpd.4 {
-  color: @primary_fixed;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
 #tray {
   color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
-#custom-player {
-  color: @primary_fixed;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-#mpd {
-  color: @primary_fixed;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
 #network {
-  color: @primary_fixed;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-
-#cpu {
   color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -116,7 +90,6 @@ tooltip {
   color: @primary_fixed;
   padding-top: 3px;
   padding-bottom: 3px;
-  /*padding-right: 13px;*/
 }
 
 #battery {
