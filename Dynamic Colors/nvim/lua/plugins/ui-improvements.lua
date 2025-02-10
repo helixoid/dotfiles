@@ -15,6 +15,7 @@ return {
       words = { enabled = true },
       toggle = { enabled = true },
       picker = { enable = true, ui_select = true },
+      image = { enabled = true },
     },
     -- stylua: ignore
     keys = {
