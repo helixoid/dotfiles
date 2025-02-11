@@ -9,4 +9,14 @@ alias ls='eza'
 alias la='eza -a'
 alias lla='eza -la'
 alias lt='eza -la --tree'
+alias ytmd='yt-dlp -x --add-metadata'
+	# Yazi Integration
+function y
+	set tmp (mktemp -t "yazi-cwd.XXXXXX")
+	yazi $argv --cwd-file="$tmp"
+	if set cwd (command cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+		builtin cd -- "$cwd"
+	end
+	rm -f -- "$tmp"
+end
 end
