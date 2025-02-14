@@ -24,7 +24,6 @@ return {
     'neovim/nvim-lspconfig',
     event = { 'BufReadPre', 'BufNewFile' },
     dependencies = {
-
       { 'j-hui/fidget.nvim', opts = {} },
       {
         'Bilal2453/luvit-meta',
@@ -44,8 +43,12 @@ return {
       local capabilities = require('blink.cmp').get_lsp_capabilities()
       local lsp = require 'lspconfig'
 
-      lsp.lua_ls.setup { capabilities = capabilities }
-      lsp.pyright.setup { capabilities = capabilities }
+      -- Servers to configure with the same capabilities
+      local servers = { 'lua_ls', 'pyright', 'clangd' }
+
+      for _, server in ipairs(servers) do
+        lsp[server].setup { capabilities = capabilities }
+      end
     end,
   },
 }
