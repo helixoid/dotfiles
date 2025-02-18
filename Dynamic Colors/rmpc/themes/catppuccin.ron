@@ -2,8 +2,6 @@
 #![enable(unwrap_newtypes)]
 #![enable(unwrap_variant_newtypes)]
 (
-    album_art_position: Right,
-    album_art_width_percent: 60,
     default_album_art_path: None,
     draw_borders: false,
     show_song_table_header: false,
@@ -11,7 +9,7 @@
     progress_bar: (
         symbols: ["", "⭘", " "],
         track_style: (bg: None),
-        elapsed_style: (fg: "#000000", bg: None),
+        elapsed_style: (fg: "#c6a0f6", bg: None),
         thumb_style: (fg: "#c6a0f6", bg: None),
     ),
     scrollbar: (
@@ -36,7 +34,7 @@
     highlight_border_style: (fg: "#b7bdf8"),
     song_table_format: [
         (
-            prop: (kind: Property(Title), style: (fg: "#b7bdf8"), default: (kind: Text("Unknown"))),
+            prop: (kind: Property(Artist), style: (fg: "#b7bdf8"), default: (kind: Text("Unknown"))),
             width: "50%",
             alignment: Right,
         ),
@@ -46,7 +44,7 @@
             alignment: Center,
         ),
         (
-            prop: (kind: Property(Artist), style: (fg: "#7dc4e4"), default: (kind: Text("Unknown"))),
+            prop: (kind: Property(Title), style: (fg: "#7dc4e4"), default: (kind: Text("Unknown"))),
             width: "50%",
         ),
     ],
@@ -68,11 +66,9 @@
                     )
                 ],
                 right: [
-                    (kind: Text("["), style: (fg: "#b7bdf8", modifiers: "Bold")),
-                    (kind: Text("Bitrate:"), style: (fg: "#b7bdf8", modifiers: "Bold")),
-                    (kind: Property(Status(Bitrate)), style: (fg: "#b7bdf8", modifiers: "Bold")),
-                    (kind: Text(" kbps"), style: (fg: "#b7bdf8", modifiers: "Bold")),
-                    (kind: Text("]"), style: (fg: "#b7bdf8", modifiers: "Bold"))
+                    (kind: Text("Vol: "), style: (fg: "#b7bdf8", modifiers: "Bold")),
+                    (kind: Property(Status(Volume)), style: (fg: "#b7bdf8", modifiers: "Bold")),
+                    (kind: Text("% "), style: (fg: "#b7bdf8", modifiers: "Bold"))
                 ]
             )
         ],
